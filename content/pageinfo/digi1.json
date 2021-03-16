@@ -1,0 +1,28 @@
+{
+  "name": "Digitalt skapande 1",
+  "link": "digi1",
+  "chapters": [
+    {
+      "title": "Om kursen",
+      "link": "about",
+      "pages": [
+        {
+          "title": "Veckoplanering",
+          "link": "planering",
+          "type": "lesson"
+        },
+        {
+          "title": "Veckoplanering",
+          "link": "planering",
+          "type": "lesson"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "title",
+      "link": "link"
+    }
+  ]
+}

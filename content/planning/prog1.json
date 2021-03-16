@@ -1,0 +1,19 @@
+{
+    "lessons": [
+        {
+            "number": "1",
+            "title": "",
+            "link": ""
+        }
+    ],
+    "weeks": [
+        {
+            "vecka": 49,
+            "lessons": [
+            {
+                "title": "Felsökning"
+            }
+            ]
+        }
+    ]
+}

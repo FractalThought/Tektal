@@ -1,0 +1,230 @@
+{
+  "name": "Programmering 1",
+  "link": "prog1",
+  "chapters": [
+    {
+      "title": "Introduktion",
+      "link": "intro",
+      "pages": [
+        {
+          "title": "REPL-programmering",
+          "link": "repl",
+          "type": "lesson"
+        },
+        {
+          "title": "Folders och flöde",
+          "link": "flow",
+          "type": "lesson"
+        },
+        {
+          "title": "Flödesövningar",
+          "link": "ovningar",
+          "type": "exercise"
+        },
+        {
+          "title": "Introprojektet",
+          "link": "projekt",
+          "type": "project"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        },
+        {
+          "title": "Problemlösning och felsökning",
+          "link": "problemlosning-och-felsokning"
+        },
+        {
+          "title": "Operatorer",
+          "link": "operatorer"
+        }
+      ]
+    },
+    {
+      "title": "Variabler",
+      "link": "variabler",
+      "pages": [
+        {
+          "title": "Introduktion till variabler",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar",
+          "link": "ovningar",
+          "type": "exercise"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        },
+        {
+          "title": "Kodstandard",
+          "link": "kodstandard"
+        },
+        {
+          "title": "Math.Random()",
+          "link": "random"
+        }
+      ]
+    },
+    {
+      "title": "Kontrollsatser",
+      "link": "kontrollsatser",
+      "pages": [
+        {
+          "title": "Introduktion till kontrollsatser?",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar",
+          "link": "ovningar",
+          "type": "exercise"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        }
+      ]
+    },
+    {
+      "title": "Iterationssatser",
+      "link": "iterationssatser",
+      "pages": [
+        {
+          "title": "Introduktion till iterationssatser?",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "While-loopar",
+          "link": "while",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar med while-loopar",
+          "link": "ovning-med-while",
+          "type": "exercise"
+        },
+        {
+          "title": "For-loopar",
+          "link": "for",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar med For-loopar",
+          "link": "ovning-med-for",
+          "type": "exercise"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        }
+      ]
+    },
+    {
+      "title": "Arrayer",
+      "link": "arrayer",
+      "pages": [
+        {
+          "title": "Introduktion till arrayer",
+          "link": "intro",
+          "type": "lesson"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        }
+      ]
+    },
+    {
+      "title": "Funktioner",
+      "link": "funktioner",
+      "pages": [
+        {
+          "title": "Introduktion till funktioner",
+          "link": "intro",
+          "type": "lesson"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        }
+      ]
+    },
+    {
+      "title": "Objekt",
+      "link": "objekt",
+      "pages": [
+        {
+          "title": "Introduktion till objekt",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar och projekt",
+          "link": "ovningar",
+          "type": "project"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        }
+      ]
+    },
+    {
+      "title": "JS på Webben",
+      "link": "webben",
+      "pages": [
+        {
+          "title": "DOM-manipulering",
+          "link": "dom-manipulering",
+          "type": "lesson"
+        },
+        {
+          "title": "Eventbindning",
+          "link": "dom-eventbindning",
+          "type": "lesson"
+        },
+        {
+          "title": "Coola namnlistan",
+          "link": "coola-namnlistan",
+          "type": "project"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        },
+        {
+          "title": "Kodstandard",
+          "link": "kodstandard"
+        },
+        {
+          "title": "Problemlösning och felsökning",
+          "link": "problemlosning-och-felsokning"
+        },
+        {
+          "title": "Pseudokod",
+          "link": "pseudokod"
+        }
+      ]
+    }
+  ]
+}

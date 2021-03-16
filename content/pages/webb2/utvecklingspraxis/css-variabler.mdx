@@ -1,0 +1,148 @@
+---
+title: "CSS-variabler"
+date: "2020-11-04"
+headings: "Syntax:syntax|Överskrivning:overskrivning|I funktioner:i-funktioner|Ändra med JS:andra-med-javascript|Källor:kallor"
+---
+
+CSS-variabler är ett sätt att spara värden i CSS, så man slipper skriva om dem gång på gång. Det gör det dessutom lättare att ändra variabler senare.
+
+# <span id="syntax"></span> Syntax:
+
+Syntaxen (sättet vi använder CSS-variabler) för CSS-variabler är lite konstig och ovanlig:
+
+## Skapande:
+
+En CSS-variabel fungerar som en egenskap (tex color), och som sådan behöver vi välja ett element där vi ska skapa variabeln med en selektor.
+
+För att skapa en CSS-variabel så behöver vi lägga den någonstans där vi kan komma åt den. Ett bra ställe att göra detta på är med pseudoklassen `:root`, vilket matchar det högsta elementet i dokumentet. För HTML-dokument är det samma som `html`. Detta gör att vi kan komma åt variabeln i alla element på sidan.
+
+```css
+/* Root gör att alla element kommer åt variabeln */
+:root {
+  --primary-color: #af0e12;
+}
+```
+
+## Användning
+
+När vi ska använda CSS-variabeln vi skapat så använder vi den som ett värde, precis som i programmering. Detta gör att vi kan sätta en egenskap till värdet som vår CSS-variabel håller.
+
+```css
+p {
+  color: var(--primary-color);
+}
+```
+
+## Fullt exempel
+
+```css
+:root {
+  --primary-color: #af0e12;
+  --secondary-color: #0eafab;
+  --text-color: var(--primary-color);
+  --accent-color: var(--secondary-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+.info-card {
+  --primary-weight: 400;
+  --bold-weight: 600;
+}
+
+.info-card__heading {
+  font-weight: var(--primary-weight);
+}
+```
+
+<span id="overskrivning"></span>
+
+# Överskriva en variabel
+
+Som standard så ärvs CSS-variabler från parent-element till child-element, likt många andra egenskaper så som `color`, `font-size`, och `font-family`.
+
+CSS-variabler kan även överskrivas precis som andra egenskaper. Det görs genom att sätta om variabeln på samma sätt som den skapades.
+
+```css
+:root {
+  --primary-color: #af0e12;
+  --secondary-color: #0eafab;
+  --text-color: var(--primary-color);
+  --accent-color: var(--secondary-color);
+}
+
+.important-container {
+  --text-color: var(--secondary-color); /* text-color blir satt till  */
+}
+
+.warning {
+  --primary-color: #af0e12;
+}
+```
+
+<span id="i-funktioner"></span>
+
+# CSS-funktioner
+
+CSS-variabler kan även användas i de flesta CSS-funktionerna.
+
+```css
+:root {
+  --padding: 20;
+}
+
+/*
+
+calc används för att göra en uträkning med två tal
+Talen kan ha olika enheter, till exempel calc(70% - 20px) räknar ut 70% av totala bredden, minus 20 pixlar.
+Det gör också att vi kan göra en custom property som inte har en specifik enhet, och sedan multiplicera med 1 av den enheten vi vill använda.
+
+*/
+
+.card {
+  padding: calc(var(--padding) * 1px);
+}
+```
+
+<span id="andra-med-javascript"></span>
+
+# Ändras live med JavaScript
+
+CSS-variabler kan ändras live med JavaScript, så här;
+
+```javascript
+/*
+  Hämtar root-elementet.
+  Observera att för att hämta root-elementet så används document.documentElement.
+  Se https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement för mer om detta.
+*/
+const root = document.documentElement;
+
+let isDark = false
+
+// Registera ett klick-event till root
+root.addEventListener("click", e => {
+  // Ifall temat är mörkt, sätt till ljust, annars sätt till mörkt.
+
+  if(isDark) {
+    root.style.setProperty("--text-color", "var(--light)")
+  } else {
+    root.style.setProperty("--background-color", "var(--dark)")
+  }
+
+  // Ställ om isDark-variabeln. Om true, sätt till false, om false, sätt till true.
+  isDark = !isDark
+})
+```
+
+<span id="kallor"></span>
+
+# Källor:
+
+- [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+- [Using CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [CSS Variables explained with 5 examples](https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd)
+- [CSS Variables Tutorial (video)](https://www.youtube.com/watch?v=sQUB039MG0I)
+- [CSS Variable Secrets (video)](https://www.youtube.com/watch?v=UQRSaG1hQ20)

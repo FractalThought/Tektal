@@ -1,0 +1,53 @@
+---
+title: "Block Element Modifier"
+date: "2020-02-26"
+---
+
+BEM står för Block Element Modifier, och är en namnkonvention/metodik för att skapa återanvändningsbara komponenter, och enklare dela kod i frontend-utveckling.
+
+Metodiken går ut på att man definierar komponentens beståndsdelar i Block och Element, och deras varianter med Modifier.
+
+# Introduktion
+
+Man definierar en komponents beståndsdelar i antingen Block eller Element, och deras varianter som Modifiers. Dessa läggs in som klasser i CSS.
+
+## Varför använda det?
+- Lättare att skapa återanvändningsbara och specifika komponenter.
+- Mer tydlig CSS som har mindre risk att påverka andra delar av applikationen.
+- Lättare att underhålla när saker är separerade från varandra.
+
+## Block
+
+Ett block är det övergripande behållaren för komponenten, och brukar även kallas för komponent i sig (till exempel `rounded-button`, `food-card`, `input-text`).
+
+Exempel på Block är ett UI-kort, en knapp, en input, osv
+
+## Element
+
+Ett element är en del av ett block, till exempel en rubrik, bild, brödtext, eller en knapp (om specifik till det blocket).
+
+Ett element definieras som en del av sitt block och får därför följande klassnamn: `.block__element`.
+
+## Modifier
+
+För att skapa olika varianter av samma element (eller block) så skapar man modifiers, som endast modifierar det existerande utseendet på elementet/blocket.
+
+En modifierar definieras som en variant av ett element/block, och får därför följande klassnamn; `.block--modifier` för en modifiering av ett block, och `.block__element--modifier` för en modifiering på ett element.
+
+# Presentation
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F21ZYm5M8KW6Zzt8TMyaR8p%2FBEM-presentation%3Fnode-id%3D1%253A256%26viewport%3D638%252C465%252C0.17791354656219482%26scaling%3Dmin-zoom" allowfullscreen></iframe>
+
+## Färdigt exempel på CodePen
+
+https://codepen.io/GuteFelix/pen/BazeEjM
+
+## Referenser:
+
+- [GetBem.com](http://getbem.com/)
+- [CSS Tricks: BEM 101](https://css-tricks.com/bem-101/)
+- [BEM.info](https://en.bem.info/)
+- [Kevin Powell: Why I use BEM naming convention for CSS (video)](https://www.youtube.com/watch?v=SLjHSVwXYq4)
+- [dcode: The Block Element Modifier (BEM) Naming Convention (Methodology) - CSS Tutorial (video)](https://www.youtube.com/watch?v=u-XKw585KqY)
+- [Card UI Design: Fundamentals and examples](https://www.justinmind.com/blog/cards-ui-design/)
+- [15 Examples of popular card UI designs](https://www.mockplus.com/blog/post/card-ui-design)

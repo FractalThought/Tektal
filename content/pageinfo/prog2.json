@@ -1,0 +1,27 @@
+{
+  "name": "Programmering 2",
+  "link": "prog2",
+  "chapters": [
+    {
+      "title": "Spelplanering",
+      "link": "spelplanering",
+      "pages": [
+        {
+          "title": "Planering",
+          "link": "spelplanering",
+          "type": "lesson"
+        }
+      ],
+      "references": [
+        {
+          "title": "Begrepp",
+          "link": "begrepp"
+        },
+        {
+          "title": "Unity",
+          "link": "unity"
+        }
+      ]
+    }
+  ]
+}

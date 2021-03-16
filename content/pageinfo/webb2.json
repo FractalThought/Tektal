@@ -1,0 +1,115 @@
+{
+  "name": "Webbutveckling 2",
+  "link": "webb2",
+  "chapters": [
+    {
+      "title": "Utvecklingspraxis",
+      "link": "utvecklingspraxis",
+      "pages": [
+        {
+          "title": "Introduktion till designsystem",
+          "link": "designsystem",
+          "type": "lesson"
+        },
+        {
+          "title": "Övning: Skapa produktkort",
+          "link": "ovning-produktkort",
+          "type": "exercise"
+        },
+        {
+          "title": "Designa ett dashboard",
+          "link": "designa-ett-dashboard",
+          "type": "project"
+        },
+        {
+          "title": "BEM-metodiken",
+          "link": "bem-metodiken",
+          "type": "lesson"
+        },
+        {
+          "title": "Övning i att använda BEM",
+          "link": "ovning-bem",
+          "type": "exercise"
+        },
+        {
+          "title": "Skapa ditt dashboard",
+          "link": "skapa-ditt-dashboard",
+          "type": "project"
+        }
+      ],
+      "referenser": [
+        {
+          "title": "Box-sizing",
+          "link": "box-sizing"
+        },
+        {
+          "title": "Färger och gradienter",
+          "link": "farger-och-gradienter"
+        }
+      ]
+    },
+    {
+      "title": "CSS Grid",
+      "link": "grid",
+      "pages": [
+        {
+          "title": "Introduktion",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar",
+          "link": "ovningar",
+          "type": "exercise"
+        },
+        {
+          "title": "Ekologiska",
+          "link": "ekologiska",
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "title": "SVG",
+      "link": "svg",
+      "pages": [
+        {
+          "title": "Introduktion",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Övningar",
+          "link": "ovningar",
+          "type": "exercise"
+        },
+        {
+          "title": "Animationsprojekt",
+          "link": "animationsprojekt",
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "title": "Responsiv",
+      "link": "responsiv",
+      "pages": [
+        {
+          "title": "Introduktion",
+          "link": "intro",
+          "type": "lesson"
+        },
+        {
+          "title": "Media queries labb",
+          "link": "mqlabb",
+          "type": "exercise"
+        },
+        {
+          "title": "Responsiv",
+          "link": "projekt",
+          "type": "project"
+        }
+      ]
+    }
+  ]
+}

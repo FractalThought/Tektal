@@ -1,0 +1,99 @@
+---
+title: "Testsida"
+date: "2020-10-09"
+myobject: { name: "Felix", number: 30 }
+items:
+  - value: Item 1
+  - value: Item 2
+  - value: Item 3
+---
+
+https://zslabs.com/articles/mdx-frontmatter-in-gatsby
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat neque, sapiente delectus, consectetur illo, esse mollitia eius vero in voluptatibus numquam ratione. Consequatur, laboriosam impedit.
+
+<!-- <RenderList items={items}/> -->
+
+{props.pageContext.frontmatter.title}
+
+{const newobject = {name: "hello"}}
+
+{newobject.name}
+
+{myobject}
+
+{items.map(item => {
+    return (<p>{item.value}</p>)
+})}
+
+<Callout half="true">HELLO</Callout>
+
+Totam distinctio dolore minus reiciendis eveniet soluta voluptas corporis sunt. Amet quod illo, dolor at cum labore tempore iste sed voluptatibus, impedit, consectetur dolorum? Aspernatur!
+
+<Warning half="true">WARNING</Warning>
+
+<Error half="true">
+
+## ERROR
+
+Tänk på att inte göra så här!
+
+</Error>
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quasi ut laudantium nam sit cupiditate ea quia velit sed tempore?
+
+<Notice half="true">
+
+**Detta kommer fungera**
+
+</Notice>
+
+Totam distinctio dolore minus reiciendis eveniet soluta voluptas corporis sunt. Amet quod illo, dolor at cum labore tempore iste sed voluptatibus, impedit, consectetur dolorum? Aspernatur!
+
+<Result>
+
+### Förväntat result
+
+```javascript
+const modules =
+    ["Left", "Right", "Straight",
+    "Left", "Right", "Straight",
+    "Left", "Right", "Straight",
+    "Straight"];
+```
+
+
+</Result>
+
+Totam distinctio dolore minus reiciendis eveniet soluta voluptas corporis sunt. Amet quod illo, dolor at cum labore tempore iste sed voluptatibus, impedit, consectetur dolorum? Aspernatur!
+
+<PracticeContainer>
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dolor!
+
+```javascript
+let age = 30;
+if(age == 30) {
+    console.log("You are the best");
+}
+```
+
+</PracticeContainer>
+
+```html
+<div>
+    <p>Hello, does this work?</p>
+</div>
+```
+
+```HTML
+<div>
+    <p>Hello, does this work?</p>
+</div>
+```
+
+```htm
+<div>
+    <p>Hello, does this work?</p>
+</div>
+```

@@ -1,0 +1,59 @@
+{
+  "name": "Dator- och nätverksteknik",
+  "link": "daona",
+  "chapters": [
+    {
+      "title": "Felsökning",
+      "link": "felsokning",
+      "pages": [
+        {
+          "title": "OSI-modellen",
+          "link": "osi",
+          "type": "lesson"
+        },
+        {
+          "title": "Diagnostik och underhåll",
+          "link": "diagnostik",
+          "type": "lesson"
+        }
+      ]
+    },
+    {
+      "title": "Dator",
+      "link": "dator",
+      "pages": [
+        {
+          "title": "Beskriv en datordel",
+          "link": "datordel",
+          "type": "project"
+        },
+        {
+          "title": "Datorbeställningar",
+          "link": "datorbestallningar",
+          "type": "project"
+        },
+        {
+          "title": "Kringutrustning",
+          "link": "kringutrustning",
+          "type": "project"
+        },
+        {
+          "title": "Mjukvara",
+          "link": "mjukvara",
+          "type": "project"
+        }
+      ]
+    },
+    {
+      "title": "Nätverk",
+      "link": "natverk",
+      "pages": [
+        {
+          "title": "Hemmanätverk",
+          "link": "hemmanatverk",
+          "type": "project"
+        }
+      ]
+    }
+  ]
+}
